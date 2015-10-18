@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54BF89D61BD43FCF007B0EE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89D51BD43FCF007B0EE5 /* main.m */; };
+		54BF89D91BD43FCF007B0EE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89D81BD43FCF007B0EE5 /* AppDelegate.m */; };
+		54BF89DC1BD43FCF007B0EE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89DB1BD43FCF007B0EE5 /* ViewController.m */; };
+		54BF89DF1BD43FCF007B0EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BF89DD1BD43FCF007B0EE5 /* Main.storyboard */; };
+		54BF89E21BD43FCF007B0EE5 /* Skylark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89E01BD43FCF007B0EE5 /* Skylark.xcdatamodeld */; };
+		54BF89E41BD43FCF007B0EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BF89E31BD43FCF007B0EE5 /* Assets.xcassets */; };
+		54BF89E71BD43FCF007B0EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BF89E51BD43FCF007B0EE5 /* LaunchScreen.storyboard */; };
+		54BF89F21BD43FCF007B0EE5 /* SkylarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89F11BD43FCF007B0EE5 /* SkylarkTests.m */; };
+		54BF89FD1BD43FCF007B0EE5 /* SkylarkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89FC1BD43FCF007B0EE5 /* SkylarkUITests.m */; };
+		54BF8A0E1BD43FFA007B0EE5 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A0B1BD43FFA007B0EE5 /* DatabaseManager.m */; settings = {ASSET_TAGS = (); }; };
+		54BF8A0F1BD43FFA007B0EE5 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A0D1BD43FFA007B0EE5 /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
+		54BF8A261BD44030007B0EE5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A141BD44030007B0EE5 /* AFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
+		54BF8A271BD44030007B0EE5 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A161BD44030007B0EE5 /* AFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
+		54BF8A281BD44030007B0EE5 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A181BD44030007B0EE5 /* AFHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+		54BF8A291BD44030007B0EE5 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A1B1BD44030007B0EE5 /* AFNetworkReachabilityManager.m */; settings = {ASSET_TAGS = (); }; };
+		54BF8A2A1BD44030007B0EE5 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A1D1BD44030007B0EE5 /* AFSecurityPolicy.m */; settings = {ASSET_TAGS = (); }; };
+		54BF8A2B1BD44030007B0EE5 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A1F1BD44030007B0EE5 /* AFURLConnectionOperation.m */; settings = {ASSET_TAGS = (); }; };
+		54BF8A2C1BD44030007B0EE5 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A211BD44030007B0EE5 /* AFURLRequestSerialization.m */; settings = {ASSET_TAGS = (); }; };
+		54BF8A2D1BD44030007B0EE5 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A231BD44030007B0EE5 /* AFURLResponseSerialization.m */; settings = {ASSET_TAGS = (); }; };
+		54BF8A2E1BD44030007B0EE5 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A251BD44030007B0EE5 /* AFURLSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54BF89EE1BD43FCF007B0EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54BF89C91BD43FCF007B0EE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54BF89D01BD43FCF007B0EE5;
+			remoteInfo = Skylark;
+		};
+		54BF89F91BD43FCF007B0EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54BF89C91BD43FCF007B0EE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54BF89D01BD43FCF007B0EE5;
+			remoteInfo = Skylark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54BF89D11BD43FCF007B0EE5 /* Skylark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skylark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BF89D51BD43FCF007B0EE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54BF89D71BD43FCF007B0EE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		54BF89D81BD43FCF007B0EE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		54BF89DA1BD43FCF007B0EE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		54BF89DB1BD43FCF007B0EE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		54BF89DE1BD43FCF007B0EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54BF89E11BD43FCF007B0EE5 /* Skylark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Skylark.xcdatamodel; sourceTree = "<group>"; };
+		54BF89E31BD43FCF007B0EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54BF89E61BD43FCF007B0EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54BF89E81BD43FCF007B0EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BF89ED1BD43FCF007B0EE5 /* SkylarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkylarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BF89F11BD43FCF007B0EE5 /* SkylarkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkylarkTests.m; sourceTree = "<group>"; };
+		54BF89F31BD43FCF007B0EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BF89F81BD43FCF007B0EE5 /* SkylarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkylarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BF89FC1BD43FCF007B0EE5 /* SkylarkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkylarkUITests.m; sourceTree = "<group>"; };
+		54BF89FE1BD43FCF007B0EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BF8A0A1BD43FFA007B0EE5 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatabaseManager.h; path = ../../../Desktop/Skylark/DataManager/DatabaseManager.h; sourceTree = "<group>"; };
+		54BF8A0B1BD43FFA007B0EE5 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseManager.m; path = ../../../Desktop/Skylark/DataManager/DatabaseManager.m; sourceTree = "<group>"; };
+		54BF8A0C1BD43FFA007B0EE5 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = ../../../Desktop/Skylark/DataManager/DataManager.h; sourceTree = "<group>"; };
+		54BF8A0D1BD43FFA007B0EE5 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = ../../../Desktop/Skylark/DataManager/DataManager.m; sourceTree = "<group>"; };
+		54BF8A131BD44030007B0EE5 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		54BF8A141BD44030007B0EE5 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		54BF8A151BD44030007B0EE5 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		54BF8A161BD44030007B0EE5 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		54BF8A171BD44030007B0EE5 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		54BF8A181BD44030007B0EE5 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		54BF8A191BD44030007B0EE5 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		54BF8A1A1BD44030007B0EE5 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		54BF8A1B1BD44030007B0EE5 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		54BF8A1C1BD44030007B0EE5 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		54BF8A1D1BD44030007B0EE5 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		54BF8A1E1BD44030007B0EE5 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		54BF8A1F1BD44030007B0EE5 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		54BF8A201BD44030007B0EE5 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		54BF8A211BD44030007B0EE5 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		54BF8A221BD44030007B0EE5 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		54BF8A231BD44030007B0EE5 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		54BF8A241BD44030007B0EE5 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		54BF8A251BD44030007B0EE5 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = ../../../Desktop/Skylark/Vendors/AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54BF89CE1BD43FCF007B0EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BF89EA1BD43FCF007B0EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BF89F51BD43FCF007B0EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54BF89C81BD43FCF007B0EE5 = {
+			isa = PBXGroup;
+			children = (
+				54BF89D31BD43FCF007B0EE5 /* Skylark */,
+				54BF89F01BD43FCF007B0EE5 /* SkylarkTests */,
+				54BF89FB1BD43FCF007B0EE5 /* SkylarkUITests */,
+				54BF89D21BD43FCF007B0EE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54BF89D21BD43FCF007B0EE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54BF89D11BD43FCF007B0EE5 /* Skylark.app */,
+				54BF89ED1BD43FCF007B0EE5 /* SkylarkTests.xctest */,
+				54BF89F81BD43FCF007B0EE5 /* SkylarkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54BF89D31BD43FCF007B0EE5 /* Skylark */ = {
+			isa = PBXGroup;
+			children = (
+				54BF89D71BD43FCF007B0EE5 /* AppDelegate.h */,
+				54BF89D81BD43FCF007B0EE5 /* AppDelegate.m */,
+				54BF89DA1BD43FCF007B0EE5 /* ViewController.h */,
+				54BF89DB1BD43FCF007B0EE5 /* ViewController.m */,
+				54BF89DD1BD43FCF007B0EE5 /* Main.storyboard */,
+				54BF89E01BD43FCF007B0EE5 /* Skylark.xcdatamodeld */,
+				54BF8A101BD44000007B0EE5 /* Data */,
+				54BF8A111BD44012007B0EE5 /* Vendors */,
+				54BF89D41BD43FCF007B0EE5 /* Supporting Files */,
+			);
+			path = Skylark;
+			sourceTree = "<group>";
+		};
+		54BF89D41BD43FCF007B0EE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54BF89E31BD43FCF007B0EE5 /* Assets.xcassets */,
+				54BF89E51BD43FCF007B0EE5 /* LaunchScreen.storyboard */,
+				54BF89E81BD43FCF007B0EE5 /* Info.plist */,
+				54BF89D51BD43FCF007B0EE5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54BF89F01BD43FCF007B0EE5 /* SkylarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				54BF89F11BD43FCF007B0EE5 /* SkylarkTests.m */,
+				54BF89F31BD43FCF007B0EE5 /* Info.plist */,
+			);
+			path = SkylarkTests;
+			sourceTree = "<group>";
+		};
+		54BF89FB1BD43FCF007B0EE5 /* SkylarkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54BF89FC1BD43FCF007B0EE5 /* SkylarkUITests.m */,
+				54BF89FE1BD43FCF007B0EE5 /* Info.plist */,
+			);
+			path = SkylarkUITests;
+			sourceTree = "<group>";
+		};
+		54BF8A101BD44000007B0EE5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				54BF8A0A1BD43FFA007B0EE5 /* DatabaseManager.h */,
+				54BF8A0B1BD43FFA007B0EE5 /* DatabaseManager.m */,
+				54BF8A0C1BD43FFA007B0EE5 /* DataManager.h */,
+				54BF8A0D1BD43FFA007B0EE5 /* DataManager.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		54BF8A111BD44012007B0EE5 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				54BF8A121BD44020007B0EE5 /* AFNetworking */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		54BF8A121BD44020007B0EE5 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				54BF8A131BD44030007B0EE5 /* AFHTTPRequestOperation.h */,
+				54BF8A141BD44030007B0EE5 /* AFHTTPRequestOperation.m */,
+				54BF8A151BD44030007B0EE5 /* AFHTTPRequestOperationManager.h */,
+				54BF8A161BD44030007B0EE5 /* AFHTTPRequestOperationManager.m */,
+				54BF8A171BD44030007B0EE5 /* AFHTTPSessionManager.h */,
+				54BF8A181BD44030007B0EE5 /* AFHTTPSessionManager.m */,
+				54BF8A191BD44030007B0EE5 /* AFNetworking.h */,
+				54BF8A1A1BD44030007B0EE5 /* AFNetworkReachabilityManager.h */,
+				54BF8A1B1BD44030007B0EE5 /* AFNetworkReachabilityManager.m */,
+				54BF8A1C1BD44030007B0EE5 /* AFSecurityPolicy.h */,
+				54BF8A1D1BD44030007B0EE5 /* AFSecurityPolicy.m */,
+				54BF8A1E1BD44030007B0EE5 /* AFURLConnectionOperation.h */,
+				54BF8A1F1BD44030007B0EE5 /* AFURLConnectionOperation.m */,
+				54BF8A201BD44030007B0EE5 /* AFURLRequestSerialization.h */,
+				54BF8A211BD44030007B0EE5 /* AFURLRequestSerialization.m */,
+				54BF8A221BD44030007B0EE5 /* AFURLResponseSerialization.h */,
+				54BF8A231BD44030007B0EE5 /* AFURLResponseSerialization.m */,
+				54BF8A241BD44030007B0EE5 /* AFURLSessionManager.h */,
+				54BF8A251BD44030007B0EE5 /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54BF89D01BD43FCF007B0EE5 /* Skylark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BF8A011BD43FCF007B0EE5 /* Build configuration list for PBXNativeTarget "Skylark" */;
+			buildPhases = (
+				54BF89CD1BD43FCF007B0EE5 /* Sources */,
+				54BF89CE1BD43FCF007B0EE5 /* Frameworks */,
+				54BF89CF1BD43FCF007B0EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skylark;
+			productName = Skylark;
+			productReference = 54BF89D11BD43FCF007B0EE5 /* Skylark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54BF89EC1BD43FCF007B0EE5 /* SkylarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BF8A041BD43FCF007B0EE5 /* Build configuration list for PBXNativeTarget "SkylarkTests" */;
+			buildPhases = (
+				54BF89E91BD43FCF007B0EE5 /* Sources */,
+				54BF89EA1BD43FCF007B0EE5 /* Frameworks */,
+				54BF89EB1BD43FCF007B0EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54BF89EF1BD43FCF007B0EE5 /* PBXTargetDependency */,
+			);
+			name = SkylarkTests;
+			productName = SkylarkTests;
+			productReference = 54BF89ED1BD43FCF007B0EE5 /* SkylarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54BF89F71BD43FCF007B0EE5 /* SkylarkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BF8A071BD43FCF007B0EE5 /* Build configuration list for PBXNativeTarget "SkylarkUITests" */;
+			buildPhases = (
+				54BF89F41BD43FCF007B0EE5 /* Sources */,
+				54BF89F51BD43FCF007B0EE5 /* Frameworks */,
+				54BF89F61BD43FCF007B0EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54BF89FA1BD43FCF007B0EE5 /* PBXTargetDependency */,
+			);
+			name = SkylarkUITests;
+			productName = SkylarkUITests;
+			productReference = 54BF89F81BD43FCF007B0EE5 /* SkylarkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54BF89C91BD43FCF007B0EE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Tine Ramos";
+				TargetAttributes = {
+					54BF89D01BD43FCF007B0EE5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					54BF89EC1BD43FCF007B0EE5 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 54BF89D01BD43FCF007B0EE5;
+					};
+					54BF89F71BD43FCF007B0EE5 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 54BF89D01BD43FCF007B0EE5;
+					};
+				};
+			};
+			buildConfigurationList = 54BF89CC1BD43FCF007B0EE5 /* Build configuration list for PBXProject "Skylark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54BF89C81BD43FCF007B0EE5;
+			productRefGroup = 54BF89D21BD43FCF007B0EE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54BF89D01BD43FCF007B0EE5 /* Skylark */,
+				54BF89EC1BD43FCF007B0EE5 /* SkylarkTests */,
+				54BF89F71BD43FCF007B0EE5 /* SkylarkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54BF89CF1BD43FCF007B0EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BF89E71BD43FCF007B0EE5 /* LaunchScreen.storyboard in Resources */,
+				54BF89E41BD43FCF007B0EE5 /* Assets.xcassets in Resources */,
+				54BF89DF1BD43FCF007B0EE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BF89EB1BD43FCF007B0EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BF89F61BD43FCF007B0EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54BF89CD1BD43FCF007B0EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BF8A2E1BD44030007B0EE5 /* AFURLSessionManager.m in Sources */,
+				54BF89DC1BD43FCF007B0EE5 /* ViewController.m in Sources */,
+				54BF8A0F1BD43FFA007B0EE5 /* DataManager.m in Sources */,
+				54BF8A291BD44030007B0EE5 /* AFNetworkReachabilityManager.m in Sources */,
+				54BF89E21BD43FCF007B0EE5 /* Skylark.xcdatamodeld in Sources */,
+				54BF8A2B1BD44030007B0EE5 /* AFURLConnectionOperation.m in Sources */,
+				54BF8A281BD44030007B0EE5 /* AFHTTPSessionManager.m in Sources */,
+				54BF8A2C1BD44030007B0EE5 /* AFURLRequestSerialization.m in Sources */,
+				54BF89D91BD43FCF007B0EE5 /* AppDelegate.m in Sources */,
+				54BF8A0E1BD43FFA007B0EE5 /* DatabaseManager.m in Sources */,
+				54BF89D61BD43FCF007B0EE5 /* main.m in Sources */,
+				54BF8A271BD44030007B0EE5 /* AFHTTPRequestOperationManager.m in Sources */,
+				54BF8A2A1BD44030007B0EE5 /* AFSecurityPolicy.m in Sources */,
+				54BF8A2D1BD44030007B0EE5 /* AFURLResponseSerialization.m in Sources */,
+				54BF8A261BD44030007B0EE5 /* AFHTTPRequestOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BF89E91BD43FCF007B0EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BF89F21BD43FCF007B0EE5 /* SkylarkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BF89F41BD43FCF007B0EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BF89FD1BD43FCF007B0EE5 /* SkylarkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54BF89EF1BD43FCF007B0EE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54BF89D01BD43FCF007B0EE5 /* Skylark */;
+			targetProxy = 54BF89EE1BD43FCF007B0EE5 /* PBXContainerItemProxy */;
+		};
+		54BF89FA1BD43FCF007B0EE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54BF89D01BD43FCF007B0EE5 /* Skylark */;
+			targetProxy = 54BF89F91BD43FCF007B0EE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54BF89DD1BD43FCF007B0EE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54BF89DE1BD43FCF007B0EE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54BF89E51BD43FCF007B0EE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54BF89E61BD43FCF007B0EE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54BF89FF1BD43FCF007B0EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54BF8A001BD43FCF007B0EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54BF8A021BD43FCF007B0EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Skylark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.Skylark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54BF8A031BD43FCF007B0EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Skylark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.Skylark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		54BF8A051BD43FCF007B0EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SkylarkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.SkylarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skylark.app/Skylark";
+			};
+			name = Debug;
+		};
+		54BF8A061BD43FCF007B0EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SkylarkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.SkylarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skylark.app/Skylark";
+			};
+			name = Release;
+		};
+		54BF8A081BD43FCF007B0EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SkylarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.SkylarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Skylark;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		54BF8A091BD43FCF007B0EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SkylarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.SkylarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Skylark;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54BF89CC1BD43FCF007B0EE5 /* Build configuration list for PBXProject "Skylark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BF89FF1BD43FCF007B0EE5 /* Debug */,
+				54BF8A001BD43FCF007B0EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54BF8A011BD43FCF007B0EE5 /* Build configuration list for PBXNativeTarget "Skylark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BF8A021BD43FCF007B0EE5 /* Debug */,
+				54BF8A031BD43FCF007B0EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54BF8A041BD43FCF007B0EE5 /* Build configuration list for PBXNativeTarget "SkylarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BF8A051BD43FCF007B0EE5 /* Debug */,
+				54BF8A061BD43FCF007B0EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54BF8A071BD43FCF007B0EE5 /* Build configuration list for PBXNativeTarget "SkylarkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BF8A081BD43FCF007B0EE5 /* Debug */,
+				54BF8A091BD43FCF007B0EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54BF89E01BD43FCF007B0EE5 /* Skylark.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54BF89E11BD43FCF007B0EE5 /* Skylark.xcdatamodel */,
+			);
+			currentVersion = 54BF89E11BD43FCF007B0EE5 /* Skylark.xcdatamodel */;
+			path = Skylark.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54BF89C91BD43FCF007B0EE5 /* Project object */;
+}
