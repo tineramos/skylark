@@ -8,7 +8,15 @@
 
 #import "EpisodeDetailViewController.h"
 
+#import "UIColor+CreateMethods.h"
+
 @interface EpisodeDetailViewController ()
+
+@property (nonatomic, weak) IBOutlet UIImageView *posterImageView;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+
+@property (nonatomic, weak) IBOutlet UIView *containerView;
+@property (nonatomic, weak) IBOutlet UIButton *watchNowButton;
 
 @end
 
@@ -18,6 +26,28 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.titleLabel.text = [self.episode.title uppercaseString];
+    
+    self.containerView.alpha = 0.0f;
+    self.watchNowButton.alpha = 0.0f;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self performSelector:@selector(animateDetailView) withObject:nil afterDelay:1.5f];
+}
+
+- (void)animateDetailView
+{
+    [UIView animateWithDuration:2.0f animations:^{
+        self.containerView.alpha = 0.8f;
+        self.watchNowButton.alpha = 1.0f;
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning
