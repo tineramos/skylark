@@ -26,6 +26,7 @@
 		545BDC3F1BD6D86E00C4C10B /* HomeSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BDC3E1BD6D86E00C4C10B /* HomeSectionView.m */; settings = {ASSET_TAGS = (); }; };
 		545BDC411BD6D87900C4C10B /* HomeSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545BDC401BD6D87900C4C10B /* HomeSectionView.xib */; settings = {ASSET_TAGS = (); }; };
 		545BDC451BD6DAB500C4C10B /* UIColor+CreateMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BDC441BD6DAB500C4C10B /* UIColor+CreateMethods.m */; settings = {ASSET_TAGS = (); }; };
+		545BDC481BD6E1A100C4C10B /* EpisodeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BDC471BD6E1A100C4C10B /* EpisodeDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		54BF89D61BD43FCF007B0EE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89D51BD43FCF007B0EE5 /* main.m */; };
 		54BF89D91BD43FCF007B0EE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89D81BD43FCF007B0EE5 /* AppDelegate.m */; };
 		54BF89DC1BD43FCF007B0EE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89DB1BD43FCF007B0EE5 /* ViewController.m */; };
@@ -94,6 +95,8 @@
 		545BDC401BD6D87900C4C10B /* HomeSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSectionView.xib; sourceTree = "<group>"; };
 		545BDC431BD6DAB500C4C10B /* UIColor+CreateMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CreateMethods.h"; sourceTree = "<group>"; };
 		545BDC441BD6DAB500C4C10B /* UIColor+CreateMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CreateMethods.m"; sourceTree = "<group>"; };
+		545BDC461BD6E1A100C4C10B /* EpisodeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeDetailViewController.h; sourceTree = "<group>"; };
+		545BDC471BD6E1A100C4C10B /* EpisodeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeDetailViewController.m; sourceTree = "<group>"; };
 		54BF89D11BD43FCF007B0EE5 /* Skylark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skylark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BF89D51BD43FCF007B0EE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54BF89D71BD43FCF007B0EE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +163,19 @@
 			name = Helper;
 			sourceTree = "<group>";
 		};
+		545BDC491BD6ECD500C4C10B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				545BDC381BD6C6C500C4C10B /* EpisodeTableViewCell.h */,
+				545BDC391BD6C6C500C4C10B /* EpisodeTableViewCell.m */,
+				545BDC3A1BD6C6C500C4C10B /* EpisodeTableViewCell.xib */,
+				545BDC3D1BD6D86E00C4C10B /* HomeSectionView.h */,
+				545BDC3E1BD6D86E00C4C10B /* HomeSectionView.m */,
+				545BDC401BD6D87900C4C10B /* HomeSectionView.xib */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
 		54BF89C81BD43FCF007B0EE5 = {
 			isa = PBXGroup;
 			children = (
@@ -188,13 +204,10 @@
 				54BF89DD1BD43FCF007B0EE5 /* Main.storyboard */,
 				54BF89DA1BD43FCF007B0EE5 /* ViewController.h */,
 				54BF89DB1BD43FCF007B0EE5 /* ViewController.m */,
-				545BDC381BD6C6C500C4C10B /* EpisodeTableViewCell.h */,
-				545BDC391BD6C6C500C4C10B /* EpisodeTableViewCell.m */,
-				545BDC3A1BD6C6C500C4C10B /* EpisodeTableViewCell.xib */,
-				545BDC3D1BD6D86E00C4C10B /* HomeSectionView.h */,
-				545BDC3E1BD6D86E00C4C10B /* HomeSectionView.m */,
-				545BDC401BD6D87900C4C10B /* HomeSectionView.xib */,
+				545BDC461BD6E1A100C4C10B /* EpisodeDetailViewController.h */,
+				545BDC471BD6E1A100C4C10B /* EpisodeDetailViewController.m */,
 				54BF89E01BD43FCF007B0EE5 /* Skylark.xcdatamodeld */,
+				545BDC491BD6ECD500C4C10B /* Custom Views */,
 				545BDC421BD6DAA500C4C10B /* Helper */,
 				54BF8A2F1BD4449F007B0EE5 /* Core Data */,
 				54BF8A101BD44000007B0EE5 /* Data */,
@@ -437,6 +450,7 @@
 				545BDC451BD6DAB500C4C10B /* UIColor+CreateMethods.m in Sources */,
 				545BDC0D1BD5DCAA00C4C10B /* Divider.m in Sources */,
 				54BF89E21BD43FCF007B0EE5 /* Skylark.xcdatamodeld in Sources */,
+				545BDC481BD6E1A100C4C10B /* EpisodeDetailViewController.m in Sources */,
 				545BDC2F1BD5F5F100C4C10B /* AFSecurityPolicy.m in Sources */,
 				545BDC3F1BD6D86E00C4C10B /* HomeSectionView.m in Sources */,
 				54BF89D91BD43FCF007B0EE5 /* AppDelegate.m in Sources */,

@@ -60,11 +60,62 @@
                     <value key="contentSizeForViewInPopover" type="size" width="800" height="800"/>
                     <connections>
                         <outlet property="tableView" destination="NZr-fq-iej" id="0GI-cu-sUd"/>
+                        <segue destination="0ib-n6-yIW" kind="show" identifier="pushEpisodeDetail" id="ezJ-LR-hms"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="814.5" y="319.5"/>
+        </scene>
+        <!--Episode Detail View Controller-->
+        <scene sceneID="rxo-mw-5qC">
+            <objects>
+                <viewController storyboardIdentifier="EpisodeDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0ib-n6-yIW" customClass="EpisodeDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LvB-cd-hxV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wqf-vr-RKa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f8a-t3-ya0">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDZ-VA-DVJ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wqf-vr-RKa" firstAttribute="top" secondItem="aDZ-VA-DVJ" secondAttribute="bottom" id="LzX-7M-Kd4"/>
+                            <constraint firstItem="aDZ-VA-DVJ" firstAttribute="leading" secondItem="f8a-t3-ya0" secondAttribute="leading" id="SpC-Mf-b2C"/>
+                            <constraint firstItem="aDZ-VA-DVJ" firstAttribute="top" secondItem="LvB-cd-hxV" secondAttribute="bottom" id="YUO-l9-hgL"/>
+                            <constraint firstAttribute="trailing" secondItem="aDZ-VA-DVJ" secondAttribute="trailing" id="iqH-Tb-VMz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="aDZ-VA-DVJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="SpC-Mf-b2C"/>
+                                <exclude reference="YUO-l9-hgL"/>
+                                <exclude reference="iqH-Tb-VMz"/>
+                                <exclude reference="LzX-7M-Kd4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="aDZ-VA-DVJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="SpC-Mf-b2C"/>
+                                <include reference="YUO-l9-hgL"/>
+                                <include reference="iqH-Tb-VMz"/>
+                                <include reference="LzX-7M-Kd4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkR-B7-dwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522.5" y="319.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g0w-n4-wAi">

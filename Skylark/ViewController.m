@@ -17,6 +17,7 @@
 #import "UIColor+CreateMethods.h"
 
 #define kEpisodeCellId  @"episodeCellId"
+#define kPushEpisode    @"pushEpisodeDetail"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -148,6 +149,16 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 55.0f;
+}
+
+#pragma mark - UITableView Delegate methods
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Divider *divider = [self.tableViewData objectAtIndex:indexPath.section];
+    Episode *episode = (Episode *)[[divider.episode allObjects] objectAtIndex:indexPath.row];
+    
+    
 }
 
 @end
