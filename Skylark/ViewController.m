@@ -62,7 +62,9 @@
 {
     [super viewDidAppear:animated];
     
-    [self downloadHomeSet];
+    if ([self.tableViewData count] == 0) {
+        [self downloadHomeSet];
+    }
 }
 
 - (void)didReceiveMemoryWarning
