@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" sectionHeaderHeight="50" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NZr-fq-iej">
@@ -38,10 +38,10 @@
                                 <exclude reference="NZr-fq-iej"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="V8a-7H-4jY"/>
                                 <exclude reference="0Zo-vD-zvM"/>
                                 <exclude reference="QtH-Uw-TYC"/>
                                 <exclude reference="ulj-CR-H8X"/>
-                                <exclude reference="V8a-7H-4jY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -49,10 +49,10 @@
                                 <include reference="NZr-fq-iej"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="V8a-7H-4jY"/>
                                 <include reference="0Zo-vD-zvM"/>
                                 <include reference="QtH-Uw-TYC"/>
                                 <include reference="ulj-CR-H8X"/>
-                                <include reference="V8a-7H-4jY"/>
                             </mask>
                         </variation>
                     </view>
@@ -76,6 +76,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Wqf-vr-RKa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f8a-t3-ya0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie_poster" translatesAutoresizingMaskIntoConstraints="NO" id="AO2-Tk-Fx3">
@@ -104,7 +105,7 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QM-st-4v4">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -177,23 +178,23 @@
                                         <exclude reference="tuX-RW-yNv"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="Eq0-J1-o6A"/>
-                                        <exclude reference="Hyl-Lw-pwP"/>
-                                        <exclude reference="OZi-b5-7nt"/>
                                         <exclude reference="DAI-cw-2d9"/>
                                         <exclude reference="YXW-6S-lbg"/>
                                         <exclude reference="cTd-ac-QO8"/>
+                                        <exclude reference="Eq0-J1-o6A"/>
+                                        <exclude reference="Hyl-Lw-pwP"/>
+                                        <exclude reference="OZi-b5-7nt"/>
+                                        <exclude reference="LRV-h0-baO"/>
+                                        <exclude reference="Ris-kP-3F1"/>
                                         <exclude reference="Efb-mG-9rR"/>
                                         <exclude reference="MJA-XO-fU1"/>
                                         <exclude reference="XGf-NU-SUa"/>
-                                        <exclude reference="LRV-h0-baO"/>
-                                        <exclude reference="Ris-kP-3F1"/>
-                                        <exclude reference="AXQ-3M-6mB"/>
-                                        <exclude reference="VbN-CU-wLQ"/>
-                                        <exclude reference="c1i-MC-uOV"/>
                                         <exclude reference="Uu5-P7-rC7"/>
                                         <exclude reference="f8b-Rg-uT8"/>
                                         <exclude reference="hwr-XI-Fi5"/>
+                                        <exclude reference="AXQ-3M-6mB"/>
+                                        <exclude reference="VbN-CU-wLQ"/>
+                                        <exclude reference="c1i-MC-uOV"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -206,23 +207,23 @@
                                         <include reference="tuX-RW-yNv"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="Eq0-J1-o6A"/>
-                                        <include reference="Hyl-Lw-pwP"/>
-                                        <include reference="OZi-b5-7nt"/>
                                         <include reference="DAI-cw-2d9"/>
                                         <include reference="YXW-6S-lbg"/>
                                         <include reference="cTd-ac-QO8"/>
+                                        <include reference="Eq0-J1-o6A"/>
+                                        <include reference="Hyl-Lw-pwP"/>
+                                        <include reference="OZi-b5-7nt"/>
+                                        <include reference="LRV-h0-baO"/>
+                                        <include reference="Ris-kP-3F1"/>
                                         <include reference="Efb-mG-9rR"/>
                                         <include reference="MJA-XO-fU1"/>
                                         <include reference="XGf-NU-SUa"/>
-                                        <include reference="LRV-h0-baO"/>
-                                        <include reference="Ris-kP-3F1"/>
-                                        <include reference="AXQ-3M-6mB"/>
-                                        <include reference="VbN-CU-wLQ"/>
-                                        <include reference="c1i-MC-uOV"/>
                                         <include reference="Uu5-P7-rC7"/>
                                         <include reference="f8b-Rg-uT8"/>
                                         <include reference="hwr-XI-Fi5"/>
+                                        <include reference="AXQ-3M-6mB"/>
+                                        <include reference="VbN-CU-wLQ"/>
+                                        <include reference="c1i-MC-uOV"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -271,16 +272,16 @@
                                 <exclude reference="JFU-YQ-R12"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="2Vt-IJ-lm0"/>
+                                <exclude reference="yMq-cC-lar"/>
+                                <exclude reference="zD0-HL-FUs"/>
+                                <exclude reference="QYp-g1-XHu"/>
                                 <exclude reference="CGI-J3-NgI"/>
                                 <exclude reference="FDO-dq-d2N"/>
                                 <exclude reference="feZ-U8-GYg"/>
                                 <exclude reference="Lmm-C6-hHE"/>
                                 <exclude reference="btO-pl-3DR"/>
                                 <exclude reference="rdQ-FJ-IRb"/>
-                                <exclude reference="QYp-g1-XHu"/>
-                                <exclude reference="2Vt-IJ-lm0"/>
-                                <exclude reference="yMq-cC-lar"/>
-                                <exclude reference="zD0-HL-FUs"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -290,16 +291,16 @@
                                 <include reference="JFU-YQ-R12"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="2Vt-IJ-lm0"/>
+                                <include reference="yMq-cC-lar"/>
+                                <include reference="zD0-HL-FUs"/>
+                                <include reference="QYp-g1-XHu"/>
                                 <include reference="CGI-J3-NgI"/>
                                 <include reference="FDO-dq-d2N"/>
                                 <include reference="feZ-U8-GYg"/>
                                 <include reference="Lmm-C6-hHE"/>
                                 <include reference="btO-pl-3DR"/>
                                 <include reference="rdQ-FJ-IRb"/>
-                                <include reference="QYp-g1-XHu"/>
-                                <include reference="2Vt-IJ-lm0"/>
-                                <include reference="yMq-cC-lar"/>
-                                <include reference="zD0-HL-FUs"/>
                             </mask>
                         </variation>
                     </view>
