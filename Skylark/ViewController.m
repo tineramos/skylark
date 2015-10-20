@@ -36,9 +36,23 @@
     self.tableView.tableHeaderView = [UIView new];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.separatorColor = [UIColor clearColor];
+    
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([EpisodeTableViewCell class])
                                                bundle:nil]
          forCellReuseIdentifier:kEpisodeCellId];
+    
+    self.navigationItem.titleView = [self titleView];
+}
+
+- (UIView *)titleView
+{
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 200.0f, 30.0f)];
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor clearColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f];
+    label.text = @"HOME";
+    return label;
 }
 
 - (void)viewDidAppear:(BOOL)animated
