@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HomeSectionView" id="iN0-l3-epB" customClass="HomeSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUf-V2-TLf">
+                    <rect key="frame" x="0.0" y="0.0" width="10" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="kLj-Fl-XGB"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSW-iN-GsT">
+                    <rect key="frame" x="18" y="14" width="294" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rUf-V2-TLf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Uf-6r-rva"/>
+                <constraint firstItem="mSW-iN-GsT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FcP-27-ijT"/>
+                <constraint firstItem="rUf-V2-TLf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ola-aI-V1E"/>
+                <constraint firstItem="mSW-iN-GsT" firstAttribute="leading" secondItem="rUf-V2-TLf" secondAttribute="trailing" constant="8" id="Pit-b2-RH5"/>
+                <constraint firstAttribute="bottom" secondItem="rUf-V2-TLf" secondAttribute="bottom" id="eXL-pt-7LT"/>
+                <constraint firstAttribute="trailing" secondItem="mSW-iN-GsT" secondAttribute="trailing" constant="8" id="t9r-oW-24h"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="colorView" destination="rUf-V2-TLf" id="GAl-OI-TSC"/>
+                <outlet property="sectionLabel" destination="mSW-iN-GsT" id="AdI-hi-lBB"/>
+            </connections>
+            <point key="canvasLocation" x="115" y="144"/>
+        </view>
+    </objects>
+</document>

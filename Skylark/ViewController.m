@@ -10,18 +10,19 @@
 
 #import "DataManager.h"
 
-#import "SectionCollectionReusableView.h"
-#import "EpisodeCollectionViewCell.h"
+#import "HomeSectionView.h"
+#import "EpisodeTableViewCell.h"
 
 #import "MBProgressHUD.h"
+#import "UIColor+CreateMethods.h"
 
 #define kEpisodeCellId  @"episodeCellId"
 
-@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
-@property (nonatomic, strong) NSArray *collectionViewData;
+@property (nonatomic, strong) NSArray *tableViewData;
 
 @end
 
@@ -32,6 +33,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.tableView.tableHeaderView = [UIView new];
+    self.tableView.tableFooterView = [UIView new];
+    self.tableView.separatorColor = [UIColor clearColor];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([EpisodeTableViewCell class])
+                                               bundle:nil]
+         forCellReuseIdentifier:kEpisodeCellId];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
     [self downloadHomeSet];
 }
 
@@ -41,70 +54,86 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSArray *)collectionViewData
+- (NSArray *)tableViewData
 {
     // holds array of section for Home set
-    if (!_collectionViewData) {
-        _collectionViewData = [NSArray array];
+    if (!_tableViewData) {
+        _tableViewData = [NSArray array];
     }
-    return _collectionViewData;
+    return _tableViewData;
+}
+
+- (NSArray *)colorSectionArray
+{
+    return @[@"00C4D0", @"6BDE70"];
 }
 
 #pragma mark - Data methods
 
 - (void)downloadHomeSet
 {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.collectionView animated:YES];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Loading...";
     
     [[DataManager sharedClient] getHomeSetWithSuccessBlock:^(NSArray *homeArray) {
-        self.collectionViewData = homeArray;
-        [self.collectionView reloadData];
+        self.tableViewData = homeArray;
+        [self.tableView reloadData];
         [hud hide:YES afterDelay:0.8f];
     } failureBlock:^(AFHTTPRequestOperation *operation, NSError *error) {
         [hud hide:YES afterDelay:0.8f];
     }];
 }
 
-#pragma mark - UICollectionView Datasource methods
+#pragma mark - UITableView Datasource methods
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [self.collectionViewData count];
+    return [self.tableViewData count];
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    Divider *divider = [self.collectionViewData objectAtIndex:section];
+    Divider *divider = [self.tableViewData objectAtIndex:section];
     return [divider.episode count];
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    EpisodeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kEpisodeCellId forIndexPath:indexPath];
+    EpisodeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kEpisodeCellId];
     
     if (!cell) {
-        cell = [[EpisodeCollectionViewCell alloc] init];
+        cell = [[EpisodeTableViewCell alloc] init];
     }
     
-    Divider *divider = [self.collectionViewData objectAtIndex:indexPath.section];
-    [cell setCellForData:(Episode *)[[divider.episode allObjects] objectAtIndex:indexPath.row]];
+    Divider *divider = [self.tableViewData objectAtIndex:indexPath.section];
+    Episode *episode = (Episode *)[[divider.episode allObjects] objectAtIndex:indexPath.row];
+    
+    [cell setCellForData:episode];
     
     return cell;
 }
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        SectionCollectionReusableView *sectionView = [collectionView dequeueReusableSupplementaryViewOfKind:kind
-                                                                                        withReuseIdentifier:NSStringFromClass([SectionCollectionReusableView class])
-                                                                                               forIndexPath:indexPath];
-        
-        Divider *divider = [self.collectionViewData objectAtIndex:indexPath.section];
-        sectionView.sectionLabel.text = divider.heading;
-    }
+    return 155.0f;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    HomeSectionView *sectionView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([HomeSectionView class])
+                                                                  owner:self
+                                                                options:nil]
+                                    firstObject];
     
-    return nil;
+    Divider *divider = [self.tableViewData objectAtIndex:section];
+    sectionView.sectionLabel.text = [divider.heading uppercaseString];
+    sectionView.colorView.backgroundColor = [UIColor colorWithHex:[[self colorSectionArray] objectAtIndex:section]];
+    return sectionView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 55.0f;
 }
 
 @end

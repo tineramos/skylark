@@ -1,5 +1,5 @@
 //
-//  EpisodeCollectionViewCell.h
+//  EpisodeTableViewCell.h
 //  Skylark
 //
 //  Created by Tine Ramos on 10/20/15.
@@ -10,7 +10,7 @@
 
 #import "Episode.h"
 
-@interface EpisodeCollectionViewCell : UICollectionViewCell
+@interface EpisodeTableViewCell : UITableViewCell
 
 - (void)setCellForData:(Episode *)episode;
 

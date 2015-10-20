@@ -1,5 +1,5 @@
 //
-//  SectionCollectionReusableView.h
+//  HomeSectionView.h
 //  Skylark
 //
 //  Created by Tine Ramos on 10/20/15.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SectionCollectionReusableView : UICollectionReusableView
+@interface HomeSectionView : UIView
 
+@property (nonatomic, weak) IBOutlet UIView *colorView;
 @property (nonatomic, weak) IBOutlet UILabel *sectionLabel;
 
 @end
