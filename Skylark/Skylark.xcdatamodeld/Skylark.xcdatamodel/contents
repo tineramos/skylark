@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="Divider" representedClassName="Divider" syncable="YES">
+        <attribute name="heading" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="episode" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Episode" inverseName="divider" inverseEntity="Episode" syncable="YES"/>
+    </entity>
+    <entity name="Episode" representedClassName="Episode" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="divider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Divider" inverseName="episode" inverseEntity="Divider" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Divider" positionX="9" positionY="261" width="128" height="73"/>
+        <element name="Episode" positionX="243" positionY="243" width="128" height="88"/>
+    </elements>
 </model>

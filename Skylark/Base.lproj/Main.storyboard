@@ -1,25 +1,111 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-8w-7L4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vjl-nC-2x7">
+                                    <size key="itemSize" width="250" height="130"/>
+                                    <size key="headerReferenceSize" width="0.0" height="40"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SectionCollectionReusableView" id="tXG-2C-zVN" customClass="SectionCollectionReusableView">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj2-lV-l3A">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Bj2-lV-l3A" firstAttribute="centerY" secondItem="tXG-2C-zVN" secondAttribute="centerY" id="f90-ct-yPx"/>
+                                        <constraint firstItem="Bj2-lV-l3A" firstAttribute="centerX" secondItem="tXG-2C-zVN" secondAttribute="centerX" id="opI-dR-cVS"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="Bj2-lV-l3A"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="f90-ct-yPx"/>
+                                            <exclude reference="opI-dR-cVS"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <mask key="subviews">
+                                            <include reference="Bj2-lV-l3A"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="f90-ct-yPx"/>
+                                            <include reference="opI-dR-cVS"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <outlet property="sectionLabel" destination="Bj2-lV-l3A" id="pVo-BR-CXP"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="W7d-Ta-7aC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KJq-mu-pQv"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jdM-8w-7L4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9fT-Yw-L9T"/>
+                            <constraint firstItem="jdM-8w-7L4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RUS-Eg-LuP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jdM-8w-7L4" secondAttribute="bottom" id="bqK-BV-YgS"/>
+                            <constraint firstAttribute="trailing" secondItem="jdM-8w-7L4" secondAttribute="trailing" id="ez5-mb-rOb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jdM-8w-7L4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9fT-Yw-L9T"/>
+                                <exclude reference="RUS-Eg-LuP"/>
+                                <exclude reference="ez5-mb-rOb"/>
+                                <exclude reference="bqK-BV-YgS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="jdM-8w-7L4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9fT-Yw-L9T"/>
+                                <include reference="RUS-Eg-LuP"/>
+                                <include reference="ez5-mb-rOb"/>
+                                <include reference="bqK-BV-YgS"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionView" destination="jdM-8w-7L4" id="fIk-bV-DVf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="294.375" y="376.875"/>
         </scene>
     </scenes>
 </document>
