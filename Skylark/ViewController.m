@@ -27,6 +27,8 @@
 
 @property (nonatomic, strong) NSArray *tableViewData;
 
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
+
 @end
 
 @implementation ViewController
@@ -39,6 +41,8 @@
     self.tableView.tableHeaderView = [UIView new];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.separatorColor = [UIColor clearColor];
+    
+    [self.tableView addSubview:self.refreshControl];
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([EpisodeTableViewCell class])
                                                bundle:nil]
@@ -71,6 +75,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (UIRefreshControl *)refreshControl
+{
+    if (!_refreshControl) {
+        _refreshControl = [[UIRefreshControl alloc] init];
+        [_refreshControl addTarget:self action:@selector(downloadHomeSet) forControlEvents:UIControlEventValueChanged];
+    }
+    return _refreshControl;
 }
 
 #pragma mark - Navigation
@@ -114,8 +127,14 @@
         self.tableViewData = homeArray;
         [self.tableView reloadData];
         [hud hide:YES afterDelay:0.8f];
+        
+        [self.refreshControl endRefreshing];
     } failureBlock:^(AFHTTPRequestOperation *operation, NSError *error) {
-        [hud hide:YES afterDelay:0.8f];
+        [hud hide:YES];
+        [self.refreshControl endRefreshing];
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:error.localizedDescription delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+        [alertView show];
     }];
 }
 

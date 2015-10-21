@@ -36,8 +36,8 @@
 		54BF89E71BD43FCF007B0EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BF89E51BD43FCF007B0EE5 /* LaunchScreen.storyboard */; };
 		54BF89F21BD43FCF007B0EE5 /* SkylarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89F11BD43FCF007B0EE5 /* SkylarkTests.m */; };
 		54BF89FD1BD43FCF007B0EE5 /* SkylarkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF89FC1BD43FCF007B0EE5 /* SkylarkUITests.m */; };
-		54BF8A0E1BD43FFA007B0EE5 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A0B1BD43FFA007B0EE5 /* DatabaseManager.m */; settings = {ASSET_TAGS = (); }; };
-		54BF8A0F1BD43FFA007B0EE5 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BF8A0D1BD43FFA007B0EE5 /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
+		54CBC11C1BD7E9E00015B664 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBC11B1BD7E9E00015B664 /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
+		54CBC11F1BD7E9F90015B664 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBC11E1BD7E9F90015B664 /* DatabaseManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,10 +114,10 @@
 		54BF89F81BD43FCF007B0EE5 /* SkylarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkylarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BF89FC1BD43FCF007B0EE5 /* SkylarkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkylarkUITests.m; sourceTree = "<group>"; };
 		54BF89FE1BD43FCF007B0EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54BF8A0A1BD43FFA007B0EE5 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatabaseManager.h; path = ../../../Desktop/Skylark/DataManager/DatabaseManager.h; sourceTree = "<group>"; };
-		54BF8A0B1BD43FFA007B0EE5 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseManager.m; path = ../../../Desktop/Skylark/DataManager/DatabaseManager.m; sourceTree = "<group>"; };
-		54BF8A0C1BD43FFA007B0EE5 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = ../../../Desktop/Skylark/DataManager/DataManager.h; sourceTree = "<group>"; };
-		54BF8A0D1BD43FFA007B0EE5 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = ../../../Desktop/Skylark/DataManager/DataManager.m; sourceTree = "<group>"; };
+		54CBC11A1BD7E9E00015B664 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = "Data Manager/DataManager.h"; sourceTree = "<group>"; };
+		54CBC11B1BD7E9E00015B664 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = "Data Manager/DataManager.m"; sourceTree = "<group>"; };
+		54CBC11D1BD7E9F90015B664 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatabaseManager.h; path = "Data Manager/DatabaseManager.h"; sourceTree = "<group>"; };
+		54CBC11E1BD7E9F90015B664 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseManager.m; path = "Data Manager/DatabaseManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,10 +249,10 @@
 		54BF8A101BD44000007B0EE5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				54BF8A0C1BD43FFA007B0EE5 /* DataManager.h */,
-				54BF8A0D1BD43FFA007B0EE5 /* DataManager.m */,
-				54BF8A0A1BD43FFA007B0EE5 /* DatabaseManager.h */,
-				54BF8A0B1BD43FFA007B0EE5 /* DatabaseManager.m */,
+				54CBC11A1BD7E9E00015B664 /* DataManager.h */,
+				54CBC11B1BD7E9E00015B664 /* DataManager.m */,
+				54CBC11D1BD7E9F90015B664 /* DatabaseManager.h */,
+				54CBC11E1BD7E9F90015B664 /* DatabaseManager.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -442,8 +442,8 @@
 				545BDC2B1BD5F5F100C4C10B /* AFHTTPRequestOperation.m in Sources */,
 				54BF89DC1BD43FCF007B0EE5 /* ViewController.m in Sources */,
 				545BDC331BD5F5F100C4C10B /* AFURLSessionManager.m in Sources */,
-				54BF8A0F1BD43FFA007B0EE5 /* DataManager.m in Sources */,
 				545BDC301BD5F5F100C4C10B /* AFURLConnectionOperation.m in Sources */,
+				54CBC11F1BD7E9F90015B664 /* DatabaseManager.m in Sources */,
 				545BDC2C1BD5F5F100C4C10B /* AFHTTPRequestOperationManager.m in Sources */,
 				545BDC0C1BD5DCAA00C4C10B /* Divider+CoreDataProperties.m in Sources */,
 				545BDC2E1BD5F5F100C4C10B /* AFNetworkReachabilityManager.m in Sources */,
@@ -451,6 +451,7 @@
 				545BDC0D1BD5DCAA00C4C10B /* Divider.m in Sources */,
 				54BF89E21BD43FCF007B0EE5 /* Skylark.xcdatamodeld in Sources */,
 				545BDC481BD6E1A100C4C10B /* EpisodeDetailViewController.m in Sources */,
+				54CBC11C1BD7E9E00015B664 /* DataManager.m in Sources */,
 				545BDC2F1BD5F5F100C4C10B /* AFSecurityPolicy.m in Sources */,
 				545BDC3F1BD6D86E00C4C10B /* HomeSectionView.m in Sources */,
 				54BF89D91BD43FCF007B0EE5 /* AppDelegate.m in Sources */,
@@ -459,7 +460,6 @@
 				545BDC3B1BD6C6C500C4C10B /* EpisodeTableViewCell.m in Sources */,
 				545BDC371BD5F62500C4C10B /* MBProgressHUD.m in Sources */,
 				545BDC321BD5F5F100C4C10B /* AFURLResponseSerialization.m in Sources */,
-				54BF8A0E1BD43FFA007B0EE5 /* DatabaseManager.m in Sources */,
 				54BF89D61BD43FCF007B0EE5 /* main.m in Sources */,
 				545BDC2D1BD5F5F100C4C10B /* AFHTTPSessionManager.m in Sources */,
 				545BDC0F1BD5DCAA00C4C10B /* Episode.m in Sources */,
