@@ -11,4 +11,5 @@ Due to limited assets, I've used only a placeholder for video thumbnail.
 ## EPISODE DETAIL ##
 "Imitation Game" image is only a placeholder, it should be the poster asset of the chosen episode.
 
-You can do pull-to-refresh on home screen.
+- You can do pull-to-refresh on home screen.
+- Added error handling.
